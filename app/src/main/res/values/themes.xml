@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Islami" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+         <!--Primary Color-->
+        <item name="colorPrimary">@color/Gold</item>
+        <item name="colorPrimaryVariant">@color/DarkGold</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!--Secondary Color-->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!--Status bar color-->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="bottom_navigation_bar_theme">
+        <item name="android:background">@color/Gold</item>
+    </style>
+
+    <style name="Theme.Islami" parent="Base.Theme.Islami" />
+</resources>

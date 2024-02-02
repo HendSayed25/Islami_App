@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home">
+
+    <ImageView
+        android:id="@+id/sebha_body"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/body_sebha_logo"
+        />
+
+    <ImageView
+        android:id="@+id/sebha_head"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/head_sebha_logo"
+        app:layout_constraintBottom_toTopOf="@id/sebha_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/Text_of_Number_of_Tasbeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sebha_body"
+        android:text="عدد التسبيحات"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/Number_of_Tasbeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Text_of_Number_of_Tasbeh"
+        android:background="@color/Gold"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:text="0"
+        />
+
+    <EditText
+        android:id="@+id/Name_of_Tasbeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Number_of_Tasbeh"
+        android:layout_marginTop="35dp"
+        android:padding="20dp"
+        android:background="@color/Gold"
+        android:textStyle="bold"
+        android:textSize="30sp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
