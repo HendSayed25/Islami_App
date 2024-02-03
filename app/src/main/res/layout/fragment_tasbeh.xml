@@ -6,6 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/home">
 
+
+
+
     <ImageView
         android:id="@+id/sebha_body"
         android:layout_width="wrap_content"

@@ -1,5 +1,6 @@
 package com.example.islami.ui.home.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.islami.R
+import com.example.islami.ui.SuraDetails.SuraDetailsActivivty
 import com.example.islami.ui.home.fragments.Adapter.SuraNameAdapter
 
 
@@ -44,7 +46,11 @@ class QuranFragment:Fragment() {
 
         adapter.Name=object:SuraNameAdapter.OnItemClickListner{
             override fun OnItemClick(pos: Int, name: String) {
-                Toast.makeText(requireActivity(),name,Toast.LENGTH_SHORT).show()
+               // Toast.makeText(requireActivity(),name,Toast.LENGTH_SHORT).show()
+                var intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)
+                intent.putExtra("sura_name",name)
+                intent.putExtra("sura_pos",pos)
+                startActivity(intent)
 
             }
         }

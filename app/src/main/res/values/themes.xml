@@ -3,7 +3,7 @@
     <style name="Base.Theme.Islami" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
 
-         <!--Primary Color-->
+        <!--Primary Color-->
         <item name="colorPrimary">@color/Gold</item>
         <item name="colorPrimaryVariant">@color/DarkGold</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -15,8 +15,9 @@
 
         <!--Status bar color-->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+
     </style>
+
     <style name="bottom_navigation_bar_theme">
         <item name="android:background">@color/Gold</item>
     </style>

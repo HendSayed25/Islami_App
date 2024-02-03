@@ -5,4 +5,5 @@
     <color name="Gold">#B7935F</color>
     <color name="DarkGold">#553911</color>
     <color name="lightGold">#ECB361</color>
+    <color name="colorTransparnet">#00000000</color>
 </resources>
