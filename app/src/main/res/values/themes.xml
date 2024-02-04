@@ -15,6 +15,8 @@
 
         <!--Status bar color-->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- this to appear the back button-->
+        <item name="homeAsUpIndicator">@drawable/icon_back</item>
 
     </style>
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.view.animation.RotateAnimation
 import android.widget.ImageView
 import android.widget.TextView
@@ -21,7 +22,7 @@ class TasbehFragment:Fragment() {
         "لا اله الا الله", "لا حول ولا قوة الا بالله",
         "الله اكبر"
     )
-    var rotateAnimation: RotateAnimation? = null
+
 
 
     override fun onCreateView(
@@ -45,9 +46,11 @@ class TasbehFragment:Fragment() {
 
     }
 
+
     private fun OnClickImage() {
         //image rotate
-        rotateImage(image_body!!)
+        val rotate=AnimationUtils.loadAnimation(view?.context,R.anim.rotate_sebha)
+        image_body?.startAnimation(rotate)
         //increase number
         var current_value = numbers?.text.toString().toInt()
         var new_value = current_value + 1
@@ -62,14 +65,7 @@ class TasbehFragment:Fragment() {
         numbers?.setText(new_value.toString())
         tasbeh?.setText(Tasbeh_List[counter])
 
+
     }
-    private fun rotateImage(imageView: ImageView) {
-        Matrix().also { matrix ->
-            imageView.scaleType = ImageView.ScaleType.MATRIX
-            matrix.postRotate(20f, (imageView.drawable.bounds.width() / 2).toFloat(),
-                (imageView.drawable.bounds.height() / 2).toFloat()
-            )
-            imageView.imageMatrix = matrix
-        }
-    }
+
 }
