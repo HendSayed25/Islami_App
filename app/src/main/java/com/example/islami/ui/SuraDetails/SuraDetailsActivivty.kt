@@ -14,6 +14,7 @@ class SuraDetailsActivivty: AppCompatActivity() {
     var Pos:Int=0
     lateinit var recycler:RecyclerView
     lateinit var adapter:VersesAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sura_details_activivty)
