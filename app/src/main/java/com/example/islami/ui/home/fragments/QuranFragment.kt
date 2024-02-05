@@ -5,18 +5,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.islami.R
 import com.example.islami.ui.SuraDetails.SuraDetailsActivivty
-import com.example.islami.ui.home.fragments.Adapter.SuraNameAdapter
+import com.example.islami.ui.SuraDetails.SuraNameAdapter
 
 
 class QuranFragment:Fragment() {
     lateinit var recyclerView:RecyclerView
-    lateinit var adapter:SuraNameAdapter
+    lateinit var adapter: SuraNameAdapter
     var ChapterNames= listOf(
         "الفاتحه","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود"
         ,"يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون"
@@ -44,7 +42,7 @@ class QuranFragment:Fragment() {
 
         adapter= SuraNameAdapter(ChapterNames)
 
-        adapter.Name=object:SuraNameAdapter.OnItemClickListner{
+        adapter.Name=object: SuraNameAdapter.OnItemClickListner{
             override fun OnItemClick(pos: Int, name: String) {
                // Toast.makeText(requireActivity(),name,Toast.LENGTH_SHORT).show()
                 var intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)

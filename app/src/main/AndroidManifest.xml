@@ -17,6 +17,11 @@
             android:exported="false"
             android:label="@string/title_activity_sura_details_activivty"
             android:theme="@style/Theme.Islami" />
+
+        <activity android:name=".ui.HadethDetails.HadethDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Islami"/>
+
         <activity
             android:name=".ui.splash.splashActivity"
             android:exported="true">
@@ -29,11 +34,7 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

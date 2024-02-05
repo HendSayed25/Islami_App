@@ -23,7 +23,7 @@ class SuraDetailsActivivty: AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
-        titleTextView=findViewById(R.id.title_text_view)
+        titleTextView=findViewById(R.id.title)
 
         initRecyclerView()
 
@@ -44,7 +44,7 @@ class SuraDetailsActivivty: AppCompatActivity() {
     private fun readSuraFile(pos:Int){
      // get the content of sura from assets
      val fileName="${pos+1}.txt" // this from assest , add 1 beacuse in asset we begin from index 1
-     val fileContent=assets.open(fileName).bufferedReader().use { it.readText() } // this take all content as one line
+     val fileContent= assets.open(fileName).bufferedReader().use { it.readText() } // this take all content as one line
      val verses:List<String> = fileContent.split("\n") //this function will separate content to lines
      // show verses in recycler view
         adapter.changeData(verses)

@@ -6,6 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/activity_sura_details_activivty">
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contnet_of_sura"
         android:layout_width="0dp"
@@ -13,9 +15,9 @@
         android:background="@drawable/rounded_white_rectangle"
         app:layout_constraintWidth_percent=".9"
         app:layout_constraintHeight_percent=".8"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"

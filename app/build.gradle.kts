@@ -36,6 +36,18 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    sourceSets {
+        getByName("main") {
+            assets {
+                srcDirs("src\\main\\assets", "src\\main\\assets2\\2",
+                    "src\\main\\assets",
+                    "src\\main\\assets\\assets2", "src\\main\\assets", "src\\main\\assets\\assets_Hadeth",
+                    "src\\main\\assets",
+                    "src\\main\\assets\\Sura"
+                )
+            }
+        }
+    }
 
 
 }
