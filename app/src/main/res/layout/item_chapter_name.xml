@@ -18,6 +18,7 @@
         android:textColor="@color/black"
         />
     <View
+        android:id="@+id/line"
         android:layout_width="0dp"
         android:layout_height="1dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,16 @@
         app:layout_constraintWidth_percent=".7"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/Gold"
+        />
+    <ImageView
+        android:id="@+id/play_sura"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        android:src="@drawable/baseline_slow_motion_video_24"
+        android:layout_marginLeft="30dp"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

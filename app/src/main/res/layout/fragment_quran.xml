@@ -7,43 +7,19 @@
     tools:background="@drawable/home"> <!-- this show when design only-->
 
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTransparnet"
-        android:fitsSystemWindows="true"
-        app:elevation="0dp"
-        tools:ignore="MissingConstraints">
-        <!--        to delete the boarder-->
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorTransparnet">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/title_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    tools:text="اسلامى"
-                    android:textStyle="bold"
-                    android:textSize="29sp"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    android:paddingTop="20dp"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </com.google.android.material.appbar.MaterialToolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="اسلامى"
+        android:textStyle="bold"
+        android:textSize="29sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingTop="20dp"/>
 
     <ImageView
         android:id="@+id/logo"
