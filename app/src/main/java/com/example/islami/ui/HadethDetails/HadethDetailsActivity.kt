@@ -18,10 +18,6 @@ class HadethDetailsActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hadeth_details)
 
-
-        setSupportActionBar(findViewById(R.id.toolbar))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         recycler=findViewById(R.id.contnet_of_hadeth)
         Title=findViewById(R.id.Hadeth_Number)
         adapter=HadethContentAdapter()
