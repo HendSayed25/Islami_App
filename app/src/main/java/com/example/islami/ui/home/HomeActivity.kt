@@ -22,7 +22,7 @@ class HomeActivity:AppCompatActivity() {
 
         bottomNavigaton.setOnItemSelectedListener {
             if(it.itemId==R.id.navigation_hadeth){
-              pushFragment(HadethFragment())
+                pushFragment(HadethFragment())
             }
             else if(it.itemId==R.id.navigation_quran){
                 pushFragment(QuranFragment())
@@ -42,6 +42,6 @@ class HomeActivity:AppCompatActivity() {
 
     private fun pushFragment(fragment: Fragment)
     {
-         supportFragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).commit()
     }
 }

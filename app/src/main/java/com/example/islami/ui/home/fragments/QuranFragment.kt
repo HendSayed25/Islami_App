@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islami.R
+import com.example.islami.ui.Radio.RadioActivity
 import com.example.islami.ui.SuraDetails.SuraDetailsActivivty
 import com.example.islami.ui.SuraDetails.SuraNameAdapter
 
@@ -45,11 +46,19 @@ class QuranFragment:Fragment() {
         adapter.Name=object: SuraNameAdapter.OnItemClickListner{
             override fun OnItemClick(pos: Int, name: String) {
                // Toast.makeText(requireActivity(),name,Toast.LENGTH_SHORT).show()
-                var intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)
+                val intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)
                 intent.putExtra("sura_name",name)
                 intent.putExtra("sura_pos",pos)
                 startActivity(intent)
+            }
+        }
 
+        adapter.Play=object:SuraNameAdapter.OnItemClickListner{
+            override fun OnItemClick(pos: Int, name: String) {
+                val intent= Intent(requireActivity(),RadioActivity::class.java)
+                intent.putExtra("sura_name",name)
+                intent.putExtra("sura_pos",pos)
+                startActivity(intent)
             }
         }
         recyclerView.adapter=adapter

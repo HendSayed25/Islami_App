@@ -3,6 +3,7 @@ package com.example.islami.ui.SuraDetails
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
@@ -12,11 +13,13 @@ class SuraNameAdapter(val items:List<String>):Adapter<SuraNameAdapter.ViewHolder
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var name:TextView=itemView.findViewById(R.id.chapter_name)
+        var play:ImageView=itemView.findViewById(R.id.play_sura)
 
     }
 
 
     var Name: OnItemClickListner?=null
+    var Play:OnItemClickListner?=null
 
     interface OnItemClickListner{
         fun OnItemClick(pos:Int,name:String)
@@ -32,13 +35,15 @@ class SuraNameAdapter(val items:List<String>):Adapter<SuraNameAdapter.ViewHolder
         holder.name.setText(SuraName)
         holder.name.setOnClickListener{
             Name?.OnItemClick(position,SuraName)
-
         }
-        
+        holder.play.setOnClickListener{
+            Play?.OnItemClick(position,SuraName)
+        }
+
     }
 
     override fun getItemCount(): Int {
-       return items.size
+        return items.size
     }
 
 }
