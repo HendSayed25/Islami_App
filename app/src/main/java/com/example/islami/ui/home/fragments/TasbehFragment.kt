@@ -39,6 +39,7 @@ class TasbehFragment:Fragment() {
         numbers = view.findViewById(R.id.Number_of_Tasbeh)
         tasbeh = view.findViewById(R.id.Name_of_Tasbeh)
 
+
         image_body?.setOnClickListener {
             OnClickImage()
 

@@ -13,8 +13,8 @@ class VersesAdapter:Adapter<VersesAdapter.VerseViewHolder>() {
 
     var items:List<String>?=null
 
-     class VerseViewHolder(itemView: View):ViewHolder(itemView){
-         val content:TextView=itemView.findViewById(R.id.content)
+    class VerseViewHolder(itemView: View):ViewHolder(itemView){
+        val content:TextView=itemView.findViewById(R.id.content)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VerseViewHolder {

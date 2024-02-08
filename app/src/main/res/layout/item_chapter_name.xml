@@ -27,6 +27,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/Gold"
         />
+    <ImageView
+        android:id="@+id/play_sura"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        android:src="@drawable/baseline_slow_motion_video_24"
+        android:layout_marginLeft="30dp"
+        />
 
 
     <ImageView

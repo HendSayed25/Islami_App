@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.islami.R
 
@@ -13,6 +14,8 @@ class RadioFragment:Fragment() {
 
     lateinit var playbtn:ImageView
     lateinit var mediaPlayer:MediaPlayer
+    lateinit var name:String
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,9 +27,13 @@ class RadioFragment:Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         playbtn=view.findViewById(R.id.play)
 
-        mediaPlayer=MediaPlayer.create(requireActivity(),R.raw.sourate_al_baqarah)
+
+
+        mediaPlayer=MediaPlayer.create(requireActivity(),R.raw.s1)
 
 
         playbtn.setOnClickListener{
@@ -44,9 +51,7 @@ class RadioFragment:Fragment() {
 
             }
 
-
         }
-
 
 
     }

@@ -46,11 +46,19 @@ class QuranFragment:Fragment() {
         adapter.Name=object: SuraNameAdapter.OnItemClickListner{
             override fun OnItemClick(pos: Int, name: String) {
                // Toast.makeText(requireActivity(),name,Toast.LENGTH_SHORT).show()
-                var intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)
+                val intent= Intent(requireActivity(),SuraDetailsActivivty::class.java)
                 intent.putExtra("sura_name",name)
                 intent.putExtra("sura_pos",pos)
                 startActivity(intent)
+            }
+        }
 
+        adapter.Play=object:SuraNameAdapter.OnItemClickListner{
+            override fun OnItemClick(pos: Int, name: String) {
+                val intent= Intent(requireActivity(),RadioActivity::class.java)
+                intent.putExtra("sura_name",name)
+                intent.putExtra("sura_pos",pos)
+                startActivity(intent)
             }
         }
 
