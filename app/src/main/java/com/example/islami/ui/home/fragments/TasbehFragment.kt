@@ -54,8 +54,8 @@ class TasbehFragment:Fragment() {
         //increase number
         var current_value = numbers?.text.toString().toInt()
         var new_value = current_value + 1
-        if (new_value == 33) {
-            new_value = 1
+        if (new_value == 30) {
+            new_value = 0
             counter += 1
             if (counter == 5) { // if we reach to the end of list so it will begin from the beginning to the list
                 counter = 0

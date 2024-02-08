@@ -36,6 +36,9 @@
             android:exported="true">
 
         </activity>
+
+        <activity android:name=".ui.Radio.RadioActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

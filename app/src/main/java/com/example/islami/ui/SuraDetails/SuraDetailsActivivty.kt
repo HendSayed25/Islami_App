@@ -18,9 +18,7 @@ class SuraDetailsActivivty: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sura_details_activivty)
 
-        // to appear the back button in it
-        setSupportActionBar(findViewById(R.id.toolbar))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
 
         titleTextView=findViewById(R.id.title)

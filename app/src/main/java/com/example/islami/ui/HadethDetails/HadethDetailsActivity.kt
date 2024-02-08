@@ -20,6 +20,7 @@ class HadethDetailsActivity: AppCompatActivity() {
 
         recycler=findViewById(R.id.contnet_of_hadeth)
         Title=findViewById(R.id.Hadeth_Number)
+
         adapter=HadethContentAdapter()
         recycler.adapter=adapter
 
